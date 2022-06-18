@@ -7,78 +7,115 @@
     <meta name="keywords" content="Yakov Tugushev, cv, resume">
     <meta name="description" content="Это сайт-резюме Якова Тугушева"> 
     <title>Yakov Tugushev. Resume</title>
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
+    <div class="container">
+        <div class="info">
+            <img src="Avatar.jpg" alt="Здесь моя Аватарка!">
+            <div class="info-container">
+                <div class="info-text">
+                    
+                    <h1>Яков Тугушев</h1>
+                    <p>Я работаю водителем-экспедитором в магазине и учусь HTML. Я люблю играть на гитаре, заниматься йогой и хочу стать программистом</p>
+                    
+                </div>
+                
+                <div class="social">
+                
+                    <h4><strong>Список социальных сетей:</strong></h4>
+                    <a href="https://vk.com/rupert_m" target="_blank">VK</a>
+                    |
+                    <a href="https://t.me/Yasha_tugushev" target="_blank">Telegram</a>
+                    |
+                    <a href="mailto: yakov.tugushev@gmail.com">My Email</a>
 
-    <img src="Avatar.jpg" width="250" alt="Здесь моя Аватарка!">
+                </div>
+            </div>
+                
+        </div>
 
-    <h1>Яков Тугушев</h1>
+        <div class="card hobbies">
+            
+            <h2><strong>Мои хобби</strong></h2>
+            
+            <ol>
+                <li>Игра на гитаре</li>
+                <li>Художественная литература</li>
+                <li>Шахматы</li>
+                <li>Анимэ</li>
+            </ol>
 
-    <p>Я работаю <strong>водителем-экспедитором</strong> в магазине и <strong>учусь HTML</strong></p>
-
-    <p>Я люблю играть на <em>гитаре, заниматься йогой и хочу стать программистом</em></p>
+        </div>
 
 
-    <p><strong>Список социальных сетей:</strong></p>
+        <div class="card job">
+        <h2>Опыт Работы</h2>
 
-<a href="https://vk.com/rupert_m" target="_blank">VK</a>
-|
-<a href="https://t.me/Yasha_tugushev" target="_blank">Telegram</a>
+        <table class="table">
+            <thead>
+                <!-- <tr>
+                    <th>Название</th>
+                    <th>Должность</th>
+                    <th>Год</th>
+                </tr> -->
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Пенсионный Фонд России</td>
+                    <td>Волонтер</td>
+                    <td>2014-н.в.</td>
+                </tr>
+                <tr>
+                    <td>ИП Тугушев</td>
+                    <td>Водитель-экспедитор</td>
+                    <td>2018-н.в.</td>
+                </tr>
+            </tbody>
 
+            </table>
+        </div>
 
-<p><strong>Мои хобби</strong></p>
-<ol>
-    <li>Игра на гитаре</li>
-    <li>Художественная литература</li>
-    <li>Шахматы</li>
-    <li></li>
-</ol>
+        <div class="card courses">
+            <h2>Мои курсы</h2>
+            <ul class="courses-list">
+                <li><a href="https://vladilen.ru/teach/control/stream/view/id/560546100" target="_blank">HTML & CSS − это первый шаг, чтобы стать IT разработчиком.</a></li>
+            </ul>
 
-<h2>Опыт Работы</h2>
+        </div>
+        
+        <div class="contact">
+            
+            <h2>Связаться со мной</h2>
+            
+            <form action="/">
+                
+                <div class="row">
+                <div class="your name">
+                    <label for="name">Ваше имя:</label>
+                    
+                    <input type="text" id="name" placeholder="Введите Имя">
+                </div>
 
-<table>
-<thead>
-    <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-    </tr>
-</thead>
-<tbody>
-    <tr>
-        <td>Пенсионный Фонд России</td>
-        <td>Волонтер</td>
-        <td>2014-н.в.</td>
-    </tr>
-    <tr>
-        <td>ИП Тугушев</td>
-        <td>Водитель-экспедитор</td>
-        <td>2018-н.в.</td>
-    </tr>
-</tbody>
+                <div class="your email">
+                    <label for="email">Ваш Email:</label>
+                    
+                    <input type="email" id="email" placeholder="Введите email">
+                </div>
+                </div>
+                <div class="your message">
+                    <label for="message">Ваше cообщение:</label>
+                    
+                    <textarea id="message" cols="25" rows="10" placeholder="Введите сообщение. . ."></textarea>
+                </div> 
+   
 
-</table>
-
-<h2>Связаться со мной</h2>
-<form action="/">
-    <div>
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="Введите Имя">
+            <button class="btn">Отправить!</button>
+        
+        </form>
+        </div>
     </div>
-
-    <div>
-        <label for="email">Ваш Email:</label>
-        <input type="email" id="email" placeholder="Введите email">
-    </div>
-
-    <div>
-        <label for="message">Ваше cообщение:</label>
-        <br>
-        <textarea id="message" cols="25" rows="10" placeholder="Введите сообщение. . ."></textarea>
-    </div>    
-
-    <button>Отправить!</button>
-</form>
-
 </body>
 </html>
